@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    overflow-x: hidden;
+    background-color: rgba(38, 214, 211, 0.89);
+}
+
+svg{
+ margin-left: 50px; 
+ margin-top: 8px;  
+ position: relative;
+}
+
+.top_box{
+    background-color:rgb(62, 46, 46);
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+.title{
+    color:aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-stretch: semi-expanded;
+    letter-spacing: 4px;
+    font-size: xx-large;
+    position: absolute;
+    right: 550px;
+    top: 25px;
+}
+
+.content{
+    display: grid;  
+    gap: 50px;
+    grid-template-areas: 
+    'left right-top right-top right-top'
+    'left middle-1 middle-2 middle-3'
+    'left middle-1 middle-2 middle-3'
+    'left middle-1 middle-2 middle-3'
+    'left middle-1 middle-2 middle-3'
+    'left bottom bottom bottom'
+    'left bottom bottom bottom'
+    'left bottom bottom bottom';
+}
+
+.content > div{
+    background-color:rgb(62, 46, 46);
+    border-radius: 20px;
+}
+
+#left{
+    grid-area: left;
+    height: 400px;
+    margin-left: 20px;
+}
+
+#right-top{
+    grid-area: right-top;
+    margin-right: 20px;
+    border-radius: 12px;
+}
+
+.search{
+    color: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    font-size: larger;
+}
+
+#middle-1{
+    grid-area: middle-1;
+}
+
+#middle-2{
+    grid-area: middle-2;
+}
+
+#middle-3{
+    grid-area: middle-3;
+    margin-right: 20px;
+}
+
+#bottom{
+    grid-area: bottom;
+    margin-right: 20px;
+    
+}
