@@ -1,0 +1,53 @@
+body{
+    margin:0;
+    padding: 0;
+    min-width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(9, 93, 14);
+}
+
+.main-box{
+    border: 5px solid black;
+    height:350px;
+    width: 1270px;
+}
+
+.title{
+    text-align: center;
+    border: 3px solid white;
+    padding: 20px;
+    color: white;
+}
+
+.events{
+    display:grid;
+    gap:30px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.event{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+svg{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+button{
+    margin-left: 120px;
+}
+
+.subdiv{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+p{
+
+    text-align: center;
+    margin:0;
+}
