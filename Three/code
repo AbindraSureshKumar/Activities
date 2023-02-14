@@ -1,0 +1,173 @@
+1) For JSON Iterate over all for loops(for, for in, for of, forEach)
+for loop:
+Code
+var books = [
+{
+title: "Lord of the Rings",
+year: 1994,
+pages: 3000
+},
+{
+title: "1984",
+year: 1984,
+pages: 2000
+},
+{
+title: "Art of war",
+year: 2000,
+pages: 5000
+}
+]
+for(let i=0;i<books.length;i++)
+{
+console.log(i,books[i]);
+}
+Output
+0 { title: 'Lord of the Rings', year: 1994, pages: 3000 }
+1 { title: '1984', year: 1984, pages: 2000 }
+2 { title: 'Art of war', year: 2000, pages: 5000 }
+For in loop
+Code
+var books = [
+{
+title: "Lord of the Rings",
+year: 1994,
+pages: 3000
+},
+{
+title: "1984",
+year: 1984,
+pages: 2000
+},
+{
+title: "Art of war",
+year: 2000,
+pages: 5000
+}
+]
+for(let i in books)
+{
+console.log(i,books[i]);
+}
+Output
+0 { title: 'Lord of the Rings', year: 1994, pages: 3000 }
+1 { title: '1984', year: 1984, pages: 2000 }
+2 { title: 'Art of war', year: 2000, pages: 5000 }
+For of loop
+Code
+var books = [
+{
+title: "Lord of the Rings",
+year: 1994,
+pages: 3000
+},
+{
+title: "1984",
+year: 1984,
+pages: 2000
+},
+{
+title: "Art of war",
+year: 2000,
+pages: 5000
+}
+]
+for(let i of books)
+{
+console.log(i);
+}
+Output
+{ title: 'Lord of the Rings', year: 1994, pages: 3000 }
+{ title: '1984', year: 1984, pages: 2000 }
+{ title: 'Art of war', year: 2000, pages: 5000 }
+forEach
+Code
+var books = [
+{
+title: "Lord of the Rings",
+year: 1994,
+pages: 3000
+},
+{
+title: "1984",
+year: 1984,
+pages: 2000
+},
+{
+title: "Art of war",
+year: 2000,
+pages: 5000
+}
+]
+books.forEach((u,v) => {
+console.log(v,u);
+});
+Output
+0 { title: 'Lord of the Rings', year: 1994, pages: 3000 }
+1 { title: '1984', year: 1984, pages: 2000 }
+2 { title: 'Art of war', year: 2000, pages: 5000 }
+2)resume data in json format
+var resume = {
+"name" : "Abindra S",
+"designation" : "Associate Technical Engineer",
+"previous organisation" : "IBM India Pvt Ltd",
+"phone":["9487218244"],
+"email id":["abindrasureshkumar@gmail.com"],
+"about" : "Aiming to hone my skills and strive to grow both
+professionally and personally in a vibrant organization. Exploring
+multiple ways to solve a problem and work towards perfection through
+progressive learning that is mutually beneficial to myself and the
+organization.",
+"experience" : [
+{
+"company" : "IBM India Pvt Ltd",
+"from" : "march 2019",
+"to" : "october 2019",
+"domain" : "support tools"
+},
+{
+"company" : "Bharath Sanchar Nigam Limited",
+"from" : "december 2017",
+"to" : "january 2018",
+"domain":"implant trainee in telecom technologies"
+}
+],
+"skills" : ['c','c++','java','mysql'],
+"certification" : ['c','c++','java'],
+"education" : [
+{
+"degree":"BE CSE",
+"institution":"K.Ramakrishnan College of Engineering",
+"from": 2014,
+"to": 2018
+},
+{
+"degree":"HSC",
+"institution":"Kamala Niketan Montessori School",
+"from":2012,
+"to":2014
+}
+],
+"soft skills":"Team player, Versatile, Outcome driven, Progressive,
+Tennis player",
+"Languages" : [
+{
+"name":"english",
+"read" : true,
+"write" : true,
+"speak" : true
+},
+{
+"name" : "tamil",
+"read" : true,
+"write" : true,
+"speak" : true
+},
+{
+"name" : "malayalam",
+"read" : true,
+"write" : false,
+"speak" : false
+}
+]
+}
