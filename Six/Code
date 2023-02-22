@@ -1,0 +1,134 @@
+Part 1
+1)script.js
+alert("I'm JavaScript!");
+alert('Hello') // this line is not having semicolon
+alert(`Wor
+ld`)
+alert(3 +
+1
++ 2); // this is multiple line code and its working
+Output:
+I’m Javascript
+Hello
+Wor
+ld
+6
+2)script.js
+let admin=9, fname=10.5;
+fname = "Guvi";
+lname = "geek"
+admin = fname+lname;
+alert( admin );
+Output:
+Guvigeek
+3)script.js
+let a = prompt("First number?");
+let b = prompt("Second number?");
+alert(a + b);
+Output
+First number?3
+Second number?2
+32
+4)script.js
+let a=prompt(“first Number”);
+let b=prompt(“second Number”);
+alert(Number(a)+Number(b));
+Output:
+first Number 3
+second Number 2
+5
+5)script.js
+var a=”2”>”12”;
+if(a)
+console.log(“code is blasted”);
+else
+console.log(“Diffused”);
+Output:
+Code is blasted
+First digit of 2 is greater than first digit of 12, so ‘a’is stored with boolean value
+of true and get diffused to be print the assignment side of ‘a’ could be replaced as
+“3”>”12”, and this makes ‘a’ to get stored with boolean value as false.
+6)script.js
+Let a= prompt(“enter any number”);
+if(a)
+console.log(“OMG it works for any number including 0”);
+else
+console.log(“success”);
+Output:
+enter any number false
+OMG it works for any number including 0
+enter any number 0
+OMG it works for any number including 0
+enter any number (press enter key for sending null or making ‘a’ to undefined)
+success
+7)script.js
+let message;
+if(Boolean( null || 2 || undefined)
+message=”Welcome Boss”;
+else
+message=”go away”;
+Output
+Welcome Boss
+8)script.js
+let message;
+let run1=2;
+let run2 = undefined;
+if(??? && “ “ || undefined)
+message = “Go Away”;
+else
+message = “welcome”;
+Output and explanation
+if ??? is replaced with run1 then output will be Go Away as “ “ string parses in ‘if’
+statement and while ??? is replaced with run2 then Welcome gets printed as ‘if’
+condition gets undefined being parsed
+9)script.js
+let lemein=’0’;
+let lemeout=0;
+let msg=””;
+if(lemein)
+msg+=”hi”;
+if(lemeout)
+msg+=”hello”);
+Output:
+hi
+Explanation “0” in if condition gets considered as string which is non zero or true
+according to ‘if’ condition and when passing 0 in if statement it gets identified as
+false.
+Part 2
+code.js
+var num =[[1,2,3,4,5],[6,7,8,9,10,11]];
+var s=0;
+for(i=0;i<num.length;i++)
+{
+var n=num[i];
+for(j=0;j<n.length;j++)
+s+=n[j];
+}
+console.log(s);
+Output
+66
+Part 3
+code
+var array
+=[[["firstname","vasanth"],["lastname","Raje"],["age",24],["role","JSWizard"]],[["firstname","Sri"],["l
+astname","Devi"],["age",28],["role","Coder"]]];
+var final=[];
+while(array.length!=0)
+{
+var outer_remove = array.shift();
+var new_object={};
+while(outer_remove.length!=0)
+{
+var inner_remove = outer_remove.shift()
+var key = inner_remove[0];
+var value =inner_remove[1];
+new_object[key]=value
+}
+final.push(new_object);
+}
+console.log(final);
+Output
+[
+{ firstname: 'vasanth', lastname: 'Raje', age: 24, role: 'JSWizard' },
+{ firstname: 'Sri', lastname: 'Devi', age: 28, role: 'Coder' }
+]
