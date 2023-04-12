@@ -197,3 +197,23 @@ Find products which contain product color indigo  and product price 492.00
 db.list.find({product_color:"indigo",product_price:{$eq:492}}).pretty()
 Delete the products which product price value are same
 db.list.deleteMany({product_price:{$eq:36}})
+db.list.aggregate([{$match: {}},
+    {$group: {_id: { price: '$product_price'},
+              product_ids: { $addToSet: "$id" },
+              count: {$sum: 1}
+             }
+    },
+    {$match:{
+            count:{$gte: 2} 
+           }
+    }
+]).forEach(row => {
+   print("Products Having duplicate prices: ", row.product_ids);
+   row.product_ids.shift();
+   print("Gonna remove the following Product ids: ", row.product_ids);
+   db.product.remove({
+       id: {
+           $in: row.product_ids
+       }
+   })
+});
